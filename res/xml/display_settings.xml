@@ -61,6 +61,16 @@
         android:entries="@array/screen_timeout_entries"
         android:entryValues="@array/screen_timeout_values" />
 
+    <Preference
+            android:key="signboard"
+            android:title="SignBoard"
+            settings:keywords=""
+            settings:useAdminDisabledSummary="true">
+        <intent
+                android:targetPackage="com.zacharee1.aospsignboard"
+                android:targetClass="com.zacharee1.aospsignboard.PageEditorActivity" />
+    </Preference>
+
     <!-- Disabled on Lineage
     <SwitchPreference
         android:key="auto_rotate"
